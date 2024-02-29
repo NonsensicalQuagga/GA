@@ -17,59 +17,63 @@
 
 % Lite variabler
 \def\email{alvin.hogdal@ga.ntig.se}
-\def\foottitle{PMmall}
+\def\foottitle{Gymnasiearbete}
 \def\name{Alvin Högdal}
 
-\title{PMmall \\ \small Gymnasiearbete}
-\author{\name}
-\date{\today}
 
 \begin{document}
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
 
-% fixar sidfot
-\lfoot{\footnotesize{\name \\ \email}}
-\rfoot{\footnotesize{\today}}
-\lhead{\sc\footnotesize\foottitle}
-\rhead{\nouppercase{\sc\footnotesize\leftmark}}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0.2pt}
-\renewcommand{\footrulewidth}{0.2pt}
+            \Huge
+            \textbf{Gymnasiearbete}
+
+            \vspace{0.5cm}
+            \LARGE
+            Subtitle
+
+            \vspace{1.5cm}
+
+            \textbf{\name}
+
+            \vfill
+
+             \\
+            Gymnasiearbete
+
+            \vspace{0.8cm}
+
+            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart}
+
+            \Large
+            Teknikprogrammet\\
+            NTI Gymnasiet\\
+            Umeå\\
+            \today
+
+        \end{center}
+    \end{titlepage}
+    \tableofcontents
+    \newpage
 
 % i Sverige har vi normalt inget indrag vid nytt stycke
 \setlength{\parindent}{0pt}
 % men däremot lite mellanrum
 \setlength{\parskip}{10pt}
-\maketitle
-\newpage
+
+
+
+\section{syfte}
+
+
 
 \section{Bakgrund}
-Internet
-
-Web Content Accessibility Guidelines eller WCAG är rekomendationer om hur en hemsida borde se ut eller fungera på webben.
-Om man följer WCAG riktlinjerna så är målet att personer med olika funktionsnedsättningar som exempelvis synnedsättning, hörselnedsättning, ljudkänslighet och ... med mera.
-Att följa dessa riktlinjer gör oftast så att hemsidan är mer användbar generellt.\parencite{WCAG}
+\section{Metod}
 
 
-En skärmläsare är en mjukvara som omvandlar textinnehåll på en webbsida till ljud eller punktskrift.
-Den omvandlar också alternativ text så att en användare kan ta del av all information på hemsidan.\parencite{audioeye}
-
-
-Alternativ text är någonting som personen som har gjort hemsidan kan lägga till på grafiskt innehåll på hemsidan.
-Enligt WCAG 2.0 1.1.1 så ska allt innehåll som inte är text ha ett text alternativ som uppfyller motsvarande syfte med vissa undantag.
-Exempelvis så behövs inte alternativtext om innehållet är dekorativt.
-
-
-
-Ide: Kolla hur 2 olika skärmläsare fungerar på en hemsida (kommer förmodligen ha fler än 2)
-
-Varför tillgänglighet?
-
-Information om blinda och dyslektiska.
-
-Hitta 2 olika skärmläsare och berätta om dom.
-
-
-
+Den mesta information som hittas är uppskattningar från tredjepart.
+Det är på grund ut av att utvecklaren inte publicerar officiella siffror.
 
 \printbibliography
 
