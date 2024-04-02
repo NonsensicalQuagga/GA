@@ -3,7 +3,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{fancyheadings}
-\usepackage[swedish]{babel}
+\usepackage[swedish, english]{babel}
 \usepackage[
     backend=biber,
     style=authoryear-ibid,
@@ -11,70 +11,138 @@
 ]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{titlesec}
+\usepackage{hyperref}
 %Källor
 \addbibresource{references.bib}
 \graphicspath{ {./images/} }
 
 % Lite variabler
-\def\email{alvin.hogdal@ga.ntig.se}
-\def\foottitle{Gymnasiearbete}
+\def\email{alvin.hogdal@elev.ga.ntig.se}
+\def\foottitle{Gymnasiearbete} % Kanske borde ändras
 \def\name{Alvin Högdal}
+
+\title{Gymnasiearbete \\ \small Gymnasiearbete}
+\author{\name}
+\date{\today}
 
 
 \begin{document}
-    \begin{titlepage}
-        \begin{center}
-            \vspace*{1cm}
 
-            \Huge
-            \textbf{Gymnasiearbete}
 
-            \vspace{0.5cm}
-            \LARGE
-            Subtitle
 
-            \vspace{1.5cm}
+% fixar sidfot
+    \lfoot{\footnotesize{\name \\ \email}}
+    \rfoot{\footnotesize{\today}}
+    \lhead{\sc\footnotesize\foottitle}
+    \rhead{\nouppercase{\sc\footnotesize\leftmark}}
+    \pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0.2pt}
+    \renewcommand{\footrulewidth}{0.2pt}
 
-            \textbf{\name}
+% i Sverige har vi normalt inget indrag vid nytt stycke
+    \setlength{\parindent}{0pt}
+% men däremot lite mellanrum
+    \setlength{\parskip}{10pt}
+    \begin{otherlanguage}{swedish}
+
+
+        \begin{titlepage}
+            \centering
+
+            % Title and subtitle are enclosed between two rules.
+            \rule{\textwidth}{1pt}
+
+            % Title
+            \vspace{.7\baselineskip}
+            {\huge \textbf{Title}}
+
+            % Subtitle
+            \vspace*{.5cm}
+            {\LARGE Subtitle}
+
+            \rule{\textwidth}{1pt}
+
+            \vspace{1cm}
+
+            % Set this size for the remaining titlepage.
+            \large
+
+            % Authors side by side, using two minipages as a trick.
+            \begin{minipage}{.5\textwidth}
+                \centering
+                \name \\
+                {\normalsize \url{alvinhogdal@elev.ga.ntig.se}}
+            \end{minipage}%
+
+            \vspace{3cm}
+
+            % Report logo.
+            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
 
             \vfill
 
-             \\
-            Gymnasiearbete
-
-            \vspace{0.8cm}
-
-            \includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart}
-
-            \Large
+            % University and date information at the bottom of the titlepage.
+            NTI Gymnasiet Umeå \\
             Teknikprogrammet\\
-            NTI Gymnasiet\\
-            Umeå\\
-            \today
+            Gymnasiearbete\\
+            Datum: \today \\
+            Handledare: Jens Andreasson
+        \end{titlepage}
+        %\maketitle
+        %\begin{center}
+        %\includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
+        %\end{center}
+        
+        
+    \end{otherlanguage}
 
-        \end{center}
-    \end{titlepage}
+
+    \begin{otherlanguage}{swedish}
     \tableofcontents
+
     \newpage
 
-% i Sverige har vi normalt inget indrag vid nytt stycke
-\setlength{\parindent}{0pt}
+% i Sverige har vi normalt inget indrag vid nytt stycke\setlength{\parindent}{0pt}
 % men däremot lite mellanrum
 \setlength{\parskip}{10pt}
 
+\section{Inledning}
 
-
-\section{syfte}
-
-
+\subsection{Syfte & Frågeställning}
+    Undersöka hur priset på liknande datorspel har ändrats över tid.
 
 \section{Bakgrund}
+
+    \subsection{datorspel}
+    Datorspel är
+    Enligt \textcite{ComputerSweden} så defineras datorspel som något spel som kräver en dator.
+    \subsection{utvecklare}
+    Ett datorspel kräver att någon skapar det.
+    Dessa personer eller företag kallas utvecklare.
+    Hur många utvecklare ett datorspel har kan variera kraftigt beroende på hur stort spelet är.
+    Det finns ingen gräns på hur många personer som kan utveckla ett spel men det krävs minst en.
+    \subsection{utgivare}
+
+    \subsection{Shooter}
+    test
+    \subsubsection{First person shooter}
+    test
+    \subsection{Downloadable content}
+    test
+    \subsection{Battle pass}
+    test
+    \subsection{Micro-transactions}
+    test
 \section{Metod}
 
+     Undersökningen går ut på att hitta information på när de valda spelen släpptes.
+     Hur mycket det kostade då. %kanske utväcklingstid
+     Vem som utvecklade spelet och vem som är utgivare.
+     Alla dlc och vad de kostade när de släpptes.
 
-Den mesta information som hittas är uppskattningar från tredjepart.
-Det är på grund ut av att utvecklaren inte publicerar officiella siffror.
+    \printbibliography
 
-\printbibliography
+    \end{otherlanguage}
 
 \end{document}
