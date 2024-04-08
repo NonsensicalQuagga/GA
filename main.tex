@@ -16,6 +16,8 @@
 %Källor
 \addbibresource{references.bib}
 \graphicspath{ {./images/} }
+\usepackage{array}
+\usepackage{hhline}
 
 % Lite variabler
 \def\email{alvin.hogdal@elev.ga.ntig.se}
@@ -108,20 +110,26 @@
 \setlength{\parskip}{10pt}
 
 \section{Inledning}
-    Datorspel är fantastiska.%subjekvit
+    Datorspel är fantastiska.
+    Det är en unik värld med nya spännande upplevelser, karaktärer, berättelser, ... och så mycket mer.
+    Dessa världar
+
 
 
 \subsection{Syfte & Frågeställning}
     Undersöka hur priset på liknande datorspel har ändrats över tid.
+    Mer specifikt så betyder detta att kolla på hur prisutvecklingen har varit inom en serie av spel.
 
+    Jämföra hur prisutvecklingen har varit på två liknande spel serier.
 
-    Jämföra hur prisutvecklingen har varit på två liknande spel
+    Hur har intäktsgenerering annat än att köpa spelet ändrats?
+
 \section{Bakgrund}
 
     \subsection{datorspel}
     Datorspel defineras av \textcite{ComputerSweden} som ett spel som kräver någon form av en dator.
     Detta inkluderar fler saker än bara spel på persondatorer.
-    Det inkluderar bland annat spelkonsoler, arkadspel och
+    Det inkluderar bland annat spelkonsoler, arkadspel, vissa brädspel och mer.
 
     \subsection{utvecklare}
     Ett datorspel kräver att någon skapar det.
@@ -133,16 +141,16 @@
     \subsection{utgivare}
     Utgivare är personerna eller företagen som ansvarar för att marknadsföra spelet.
     Det kan vara exakt samma grupp eller företag som skapat spelet.
-    Om utvecklaren har presenterat en spel ide för investerare så är det oftast företaget som investerade i iden som är utgivare.
-
+    Om utvecklaren har presenterat en spel ide för investerare så är det oftast investeraren som är utgivare.
+    Ett spel kan ha fler än en utgivare men då är det oftast någon speciallösning i ett specifikt land.
 
     \subsection{Shooter}
-    En \("\)shooter\("\) är en genre på datorspel.
-    Att ett spel är en \("\)shooter\("\) innebär att en av huvudmekanikerna i spelet är att skjuta någon projektil på någon figur.
+    En )shooter är en genre på datorspel.
+    Att ett spel är en shooter innebär att en av huvudmekanikerna i spelet är att skjuta någon projektil.
     Detta kan vara allt från att skjuta pilar på måltavlor till att skjuta kulor på personer.
 
     \subsubsection{First person shooter}
-    En \("\)First person shooter\("\) eller FPS är en \("\)shooter\("\) som utgår från den spelbara karaktärens perspektiv.
+    En First person shooter eller FPS är en shooter som utgår från den spelbara karaktärens perspektiv.
     Ett exempel på en FPS är datorspelet \("\)Counter-Strike 2\("\) som är utvecklat och marknadsfört av \textcite{CounterStrike}
 
     \subsection{Downloadable content}
@@ -151,7 +159,7 @@
     En DLC kan vara vad som helst.
     Det finns ingen gräns för hur mycket DLC ett datorspel kan ha och det finns inte häller någon gräns för hur mycket det kan kosta.
     Generellt sätt så är priset för DLC lägre än vad själva spelet
-
+    %kanske kan skriva mer
     \subsection{Battle pass}
     Battle pass är ett system där du köper rätten till att få något innehåll i ett datorspel.
     Med ett Battle pass så får du innehållet genom att spela spelet.
@@ -161,32 +169,115 @@
     Generellt sätt så är battle pass tidsbegränsade och man låser upp tiers utan att köpa det men man får inte innehållet tills man köper det.
     Oftast så kan man också betala för att låsa upp nästa tier efter man köpt battle passet.
 
+    \subsection{Premiumvalutor}
+    En premiumvaluta inom ett spel är en valuta som spelaren oftast inte kan frå genom att spela spelet.
+    Om man kan få den i spelet så är det oftast i små mängder.
+    Snabbaste eller enda vägen att få en premiumvaluta är att spendera pengar.
+    Om det finns flera olika premiumvalutor så brukar man kunna omvandla dom till andra valutor.
+    Det går oftast inte att kuvertera till valutor som man kan betala för
+    Ett spel kan ha flera olika premiumvalutor men oftast så kan man endast köpa en.
+
     \subsection{Micro-transactions}
     test
 
     \subsubsection{Lootbox}
     Lootboxes är en form av micro-transaction där du köper en låda som ger dig någonting.
     Alltså du köper någonting fast du vet inte vad det är.
-    I en lootbox så fins det oftast väldigt många olika saker med olika chans att få dom.
+    I en lootbox så fins det oftast väldigt många olika saker med olika chans att få dem.
     Sakerna som en spelare vill ha har oftast väldigt låg chans.
-    Låt os säga att du vill ha ett specifikt \("\)Legendary item\("\).
-    Det fins en 1\% chans att få en legendarisk sak och det finns 5 olika.
+    Låt oss säga att du vill ha ett specifikt \("\)Legendary item\("\).
+    Det finns en 1\% chans att få en legendarisk sak och det finns 5 olika.
     Alltså en \(1/500\) eller 0,2\% chas att få det du vill.
     Detta system liknar spelmaskiner som finns på kasinon med den största skillnaden att du får pengar på kasinon och saker inuti spelet från lootboxes.
 
-    \subsubsection{inflation}
+    \subsubsection{Steam}
+    Steam är en digital marknadsplattform som är gjord av företaget VALVE.
+    Plattformens primära funktion är försäljningen och nerladdningen av digitala datorspel.
+    Steam kräver ett användarkonto för att du ska kunna använda plattformen.
+    Spelen som en specifik användare har köpt sparas endast på den användaren och kan inte byta användare.
 
 
-
+    \subsubsection{SteamDB}
+    Steam har en massa information som man kan få från plattformen.
+    Denna information inkluderar en hel del olika saker.
+    Exempelvis så kan det vara om någon version av spelet har ändrats eller om sidan för spelet har uppdaterats.
 
 \section{Metod}
 
-     Undersökningen går ut på att hitta information på när de valda spelen släpptes.
-     Hur mycket det kostade då. %kanske utväcklingstid
-     Vem som utvecklade spelet och vem som är utgivare.
-     Alla dlc och vad de kostade när de släpptes.
+     Undersökningen går ut på att hitta information på de valda spelen.
+     Den informationen inkluderar:
+     \begin{itemize}
+         \item Hur mycket spelet kostade när det släpptes och när släpptes det?
+         \item Vem utvecklade spelet och vem är utgivaren?
+         \item All DLC som har eller har haft ett pris och vad dom kostade när dom släpptes?
+         \item Premiumvalutor och hur mycket det kostar/kostade?
+         \item Vad man kan köpa med eventuella premiumvalutor?
+         \item Annan eventuell intäktsgenerering med beskrivning av vad den är och vad den kostar/kostade.
+     \end{itemize}
+    För att hitta denna information användes SteamDB och information från att spela spelet eller videor om spelet.
+    Om spelet inte finns på Steam så används Wikipedia och annan lämplig marknadshemsida.
+    Priset för produkterna kan också vara det aktuella priset om spelet inte finns på Steam.
+    % Hur används informationen.
 
-    \printbibliography[title={Referenser}]
+\section{Resultat}
+
+
+
+    \begin{table}[htbp]
+        \centering
+        \setlength\tabcolsep{2pt}
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+            \hline
+                 & Utgivnings- &            &          &         & Mängd & Totala kostnad \\[-2pt]% compensate for extrarowheight
+            Spel & datum       & Utvecklare & Utgivare & Kostnad & DLC   & unik DLC \\
+            \hline
+            Call of Duty: & 9 november &&&&&\\ [-2pt]
+            Black Ops     & 2010       & Treyarch & Activision & 59,99€ & 3 & 41,97€ \\
+            \hline
+            Call of Duty: & 5 november & Infinity &&&&\\ [-2pt]
+            Ghosts        & 2013       & Ward     & Activision & 59,99€ & 51 & 157,53€ \\ %Exclude digital hardend pack
+            \hline
+            Call of Duty:    & 5 november & Infinity &&&&\\ [-2pt]
+            Infinite Warfare & 2016       & Ward     & Activision & 59,99€ & 5 & 65,95€ \\
+            \hline
+            Call of Duty®:  & 25 oktober & Infinity &&&&\\ [-2pt]
+            Modern Warfare® & 2019       & Ward     & Activision & 59,99€ & 2 & 29,98€ \\
+            \hline
+            Call of Duty®:     & 28 oktober & Infinity &&&&\\ [-2pt]
+            Modern Warfare® II & 2022       & Ward     & Activision & 69,99€ & 15 & 319,85€ \\
+            \hline
+            Battlefield:  &  2 mars && Electronic &&&\\ [-2pt]
+            Bad Company 2 & 2010 & DICE & Arts & 29,99€ & 2 & 17,98€\\
+            \hline
+            & 29 oktober && Electronic &&&\\ [-2pt]
+            Battlefield 4 & 2013 & DICE & Arts & 59,99€ & 19 & 119,97€\\
+            \hline
+            & 21 oktober && Electronic &&&\\ [-2pt]
+            Battlefield 1 & 2016 & DICE & Arts & 59,99€ & 12 & 99,98€\\
+            \hline
+            & 20 november && Electronic &&&\\ [-2pt]
+            Battlefield V & 2018 & DICE & Arts & 59,99€ & 0 & 0€\\
+            \hline
+            & 19 november && Electronic &&&\\ [-2pt]
+            Battlefield 2042 & 2021 & DICE &  Arts & 59,99€ & 7 & 138,94\\
+            \hline
+        \end{tabular}
+        \caption{Reultat )}
+        \label{tab:Resultat}
+    \end{table}
+    \("\)Total kostnad unik DLC\("\) är allt innehåll som du kan få från DLC optimerad för lägsta kostnad.
+    Det betyder exempelvis att om det finns fyra olika DLC som innehåller olika saker.
+    Det finns också en femte DLC som innehåller exakt samma saker som dom första 4 till lägre pris än att köpa alla fyra DLC separat.
+    Då räknas endast priset för den femte.
+
+    Call of Duty: Infinite warfare, Call of Duty® Modern Warfare® och Call of Duty®: Modern Warfare® har en premiumvaluta som heter \("\)CoD Points\("\).
+
+
+
+%totala kosnad unik dlc är lägsta priset för allt innehåll.
+    \newpage
+    \section{Referenser}
+    \printbibliography[heading=none]
 
     \end{otherlanguage}
 
