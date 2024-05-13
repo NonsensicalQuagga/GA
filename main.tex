@@ -32,7 +32,6 @@
 \begin{document}
 
 
-
 % fixar sidfot
     \lfoot{\footnotesize{\name \\ \email}}
     \rfoot{\footnotesize{\today}}
@@ -75,7 +74,7 @@
                 \centering
                 \name \\
                 {\normalsize \url{alvinhogdal@elev.ga.ntig.se}}
-            \end{minipage}%
+            \end{minipage}
 
             \vspace{3cm}
 
@@ -95,12 +94,12 @@
         %\begin{center}
         %\includegraphics[width=0.4\textwidth]{../images/NTI Gymnasiet_Symbol_print_svart.png}
         %\end{center}
-        
-        
+
+
     \end{otherlanguage}
 
 
-    \begin{otherlanguage}{swedish}
+    \begin{otherlanguage}{english}
     \tableofcontents
 
     \newpage
@@ -109,269 +108,481 @@
 % men däremot lite mellanrum
 \setlength{\parskip}{10pt}
 
-\section{Inledning}
-    Datorspel är fantastiska.
-    Det är en unik värld med nya spännande upplevelser, karaktärer, berättelser, historier och så mycket mer.
-    Möjligheten inom dessa världar har ökat exponentiellt med teknikutvecklingen.
-    Skaparna har gåt från att begränsa sina ideer av tekniska skäl till att den begränsas av vad skaparen rimligtvis kan skapa med deras budget.
-    Om datorspel har blivit mer komplexa så är frågan då hur har deras pris ändrats?
-    Finns det någon extra kostnad för att grafikutvecklarna behöver göra mer komplexa figurer?
+    \section{Abstract}
 
-
-
-
-\subsection{Syfte & Frågeställning}
-    Undersöka hur priset på liknande datorspel har ändrats över tid.
-    Mer specifikt så betyder detta att kolla på hur prisutvecklingen har varit inom en serie av spel.
-
-    Jämföra hur prisutvecklingen har varit på två liknande spel serier.
-
-    Hur har intäktsgenerering annat än att köpa spelet ändrats?
-
-\section{Bakgrund}
-
-    \subsection{datorspel}
-    Datorspel defineras av \textcite{ComputerSweden} som ett spel som kräver någon form av en dator.
-    Detta inkluderar fler saker än bara spel på persondatorer.
-    Det inkluderar bland annat spelkonsoler, arkadspel, vissa brädspel och mer.
-
-    \subsection{utvecklare}
-    Ett datorspel kräver att någon skapar det.
-    Dessa personer eller företag som skapar ett spel har samlingsnamnet utvecklare.
-    Alla som har varit med och skapat spelet ingår i namnet utvecklare.
-    Hur många utvecklare ett datorspel har kan variera kraftigt beroende på hur stort spelet är.
-    Det finns ingen gräns på hur många personer som kan utveckla ett spel men det krävs minst en.
-
-    \subsection{utgivare}
-    Utgivare är personerna eller företagen som ansvarar för att marknadsföra spelet.
-    Det kan vara exakt samma grupp eller företag som skapat spelet.
-    Om utvecklaren har presenterat en spel ide för investerare så är det oftast investeraren som är utgivare.
-    Ett spel kan ha fler än en utgivare men då är det oftast någon speciallösning i ett specifikt land.
-
-    \subsection{Shooter}
-    En )shooter är en genre på datorspel.
-    Att ett spel är en shooter innebär att en av huvud mekanikerna i spelet är att skjuta någon projektil.
-    Detta kan vara allt från att skjuta pilar på måltavlor till att skjuta kulor på personer.
-
-    \subsubsection{First person shooter}
-    En First person shooter eller FPS är en shooter som utgår från den spelbara karaktärens perspektiv.
-    Ett exempel på en FPS är datorspelet \("\)Counter-Strike 2\("\) som är utvecklat och marknadsfört av \textcite{CounterStrike}
-
-    \subsection{Downloadable content}
-    Downloadable content eller DLC är innehåll till ett datorspel som utvecklaren och utgivaren av någon anledning vill hålla separat.
-    Det kan vara en uppdatering som ändrar någonting, resurser som används i spelet, kosmetiska ändringar, nya banor eller vapen\ldots
-    En DLC kan vara vad som helst.
-    Det finns ingen gräns för hur mycket DLC ett datorspel kan ha och det finns inte heller någon gräns för hur mycket det kan kosta.
-    Generellt sätt så är priset för DLC lägre än vad själva spelet
-    %kanske kan skriva mer
-    \subsection{Battle pass}
-    Battle pass är ett system där du köper rätten till att få något innehåll i ett datorspel.
-    Med ett Battle pass så får du innehållet genom att spela spelet.
-    Medan du spelar spelet så låser du upp nya \("\)tiers\("\).
-    En tier är en låda med något innehåll.
-    Innan man köper ett battle pass kan man oftast se hur många tiers det har och vad som finns i dem.
-    Generellt sätt så är battle pass tidsbegränsade och man låser upp tiers utan att köpa det men man får inte innehållet tills man köper det.
-    Oftast så kan man också betala för att låsa upp nästa tier efter man köpt battle passet.
-
-    \subsection{Premiumvalutor}
-    En premiumvaluta inom ett spel är en valuta som spelaren oftast inte kan få genom att spela spelet.
-    Om man kan få den i spelet så är det oftast i små mängder.
-    Snabbaste eller enda vägen att få en premiumvaluta är att spendera pengar.
-    Om det finns flera olika premiumvalutor så brukar man kunna omvandla dom till andra valutor.
-    Det går oftast inte att kuvertera till valutor som man kan betala för
-    Ett spel kan ha flera olika premiumvalutor men oftast så kan man endast köpa en.
-
-    %\subsection{Micro-transactions}
-    %test
-
-    \subsubsection{Lootbox}
-    Lootboxes är en form av micro-transaction där du köper en låda som ger dig någonting.
-    Alltså du köper någonting fast du vet inte vad det är.
-    I en lootbox så fins det oftast väldigt många olika saker med olika chans att få dem.
-    Sakerna som en spelare vill ha har oftast väldigt låg chans.
-    Låt oss säga att du vill ha ett specifikt \("\)Legendary item\("\).
-    Det finns en 1\% chans att få en legendarisk sak och det finns 5 olika.
-    Alltså en \(1/500\) eller 0,2\% chas att få det du vill.
-    Detta system liknar spelmaskiner som finns på casinon med den största skillnaden att du får pengar på casinon och saker inuti spelet från lootboxes.
-
-    \subsubsection{Steam}
-    Steam är en digital marknadsplattform som är gjord av företaget VALVE.
-    Plattformens primära funktion är försäljningen och nerladdningen av digitala datorspel.
-    Steam kräver ett användarkonto för att du ska kunna använda plattformen.
-    Spelen som en specifik användare har köpt sparas endast på den användaren och kan inte byta användare.
-
-
-    \subsubsection{SteamDB}
-    Steam har en massa information som man kan få från plattformen.
-    Denna information inkluderar en hel del olika saker.
-    Exempelvis så kan det vara om någon version av spelet har ändrats eller om sidan för spelet har uppdaterats.
-
-\section{Metod}
-
-     Undersökningen går ut på att hitta information på de valda spelen.
-     Den informationen inkluderar:
-     \begin{itemize}
-         \item Hur mycket spelet kostade när det släpptes och när släpptes det?
-         \item Vem utvecklade spelet och vem är utgivaren?
-         \item All DLC som har eller har haft ett pris och vad dom kostade när dom släpptes?
-         \item Premiumvalutor och hur mycket det kostar/kostade?
-         \item Vad man kan köpa med eventuella premiumvalutor?
-         \item Annan intäktsgenerering med beskrivning av vad den är och vad den kostar/kostade.
-     \end{itemize}
-    För att hitta denna information användes SteamDB och information från att spela spelet eller videor om spelet.
-    Om spelet inte finns på Steam så används Wikipedia och annan lämplig marknads hemsida.
-    Priset för produkterna kan också vara det aktuella priset om spelet inte finns på Steam.
-    % Hur används informationen.
-
-\section{Resultat}
-
-
-
-    \begin{table}[htbp]
-        \centering
-        \setlength\tabcolsep{2pt}
-        \begin{tabular}{|c|c|c|c|c|c|c|}
-            \hline
-                 & Utgivnings- &            &          &         & Mängd & Totala kostnad \\[-2pt]% compensate for extrarowheight
-            Spel & datum       & Utvecklare & Utgivare & Kostnad & DLC   & unik DLC \\
-            \hline
-            Call of Duty: & 9 november &&&&&\\ [-2pt]
-            Black Ops     & 2010       & Treyarch & Activision & 59,99€ & 3 & 41,97€ \\
-            \hline
-            Call of Duty: & 5 november & Infinity &&&&\\ [-2pt]
-            Ghosts        & 2013       & Ward     & Activision & 59,99€ & 51 & 157,53€ \\ %Exclude digital hardened pack
-            \hline
-            Call of Duty:    & 5 november & Infinity &&&&\\ [-2pt]
-            Infinite Warfare & 2016       & Ward     & Activision & 59,99€ & 5 & 65,95€ \\
-            \hline
-            Call of Duty®:  & 25 oktober & Infinity &&&&\\ [-2pt]
-            Modern Warfare® & 2019       & Ward     & Activision & 59,99€ & 2 & 29,98€ \\
-            \hline
-            Call of Duty®:     & 28 oktober & Infinity &&&&\\ [-2pt]
-            Modern Warfare® II & 2022       & Ward     & Activision & 69,99€ & 15 & 319,85€ \\
-            \hline
-            Battlefield:  &  2 mars && Electronic &&&\\ [-2pt]
-            Bad Company 2 & 2010 & DICE & Arts & 29,99€ & 2 & 17,98€\\
-            \hline
-            & 29 oktober && Electronic &&&\\ [-2pt]
-            Battlefield 4 & 2013 & DICE & Arts & 59,99€ & 19 & 119,97€\\
-            \hline
-            & 21 oktober && Electronic &&&\\ [-2pt]
-            Battlefield 1 & 2016 & DICE & Arts & 59,99€ & 12 & 99,98€\\
-            \hline
-            & 20 november && Electronic &&&\\ [-2pt]
-            Battlefield V & 2018 & DICE & Arts & 59,99€ & 0 & 0€\\
-            \hline
-            & 19 november && Electronic &&&\\ [-2pt]
-            Battlefield 2042 & 2021 & DICE &  Arts & 59,99€ & 7 & 138,94€\\
-            \hline
-        \end{tabular}
-        \caption{}
-        \label{tab:Resultat}
-    \end{table}
-%totala kostnad unik dlc är lägsta priset för allt innehåll.
-    \("\)Total kostnad unik DLC\("\) är allt innehåll som du kan få från DLC optimerad för lägsta kostnad.
-    Det betyder exempelvis att om det finns fyra olika DLC som innehåller olika saker.
-    Det finns också en femte DLC som innehåller exakt samma saker som dom första 4 till lägre pris än att köpa alla fyra DLC separat.
-    Då räknas endast priset för den femte.
-
-    \subsection{Annan intäktsgenerering}
-    Utöver DLC saknar Battlefield: Bad Company 2, Call of Duty: Black Ops och Call of Duty: Ghost annan form av intäktsgenerering
-
-    Battlefield serien är kopplat till en prenumeration som heter \("\)EA play\("\).
-    Denna prenumeration ger tillgång till några spel och rabatt på de flesta produkterna med Electronic Arts som utgivare.
-
-    Call of Duty: Infinite warfare, Call of Duty® Modern Warfare® och Call of Duty®: Modern Warfare® har en premiumvaluta som heter \("\)CoD Points\("\).
-    Battlefield V och Battlefield 2042 har också en premiumvaluta som kallas\("\)Battlefield coins\("\).
-    Priset för premiumvalutan är samma inom alla spelen men deras funktion och hur många olika pris val som finns kan variera.
-    \begin{table}[htbp]
-        \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-            \hline
-            Pris:  & 1,99€ & 4,99€ & 9,99€ & 19,99€ & 39,99€ & 75,99€ & 99,99€ & 149,99€ \\
-            \hline
-            Mängd: & 200 & 500 & 1100 & 2400 & 5000 & 9500 & 13000 & 21000\\
-            \hline
-        \end{tabular}
-        \caption{}
-        \label{tab:Premium}
-    \end{table}
-    %\subsubsection{Call of Duty: Infinite Warfare}
-   % Spelet har lootboxes som kan
-
-
-    %\subsubsection{Call of Duty®: Modern Warfare®}
-
-   % \subsubsection{Call of Duty®: Modern Warfare® II}
-
-    %\subsubsection{Battlefield 4}
-
-   % \subsubsection{Battlefield 1}
-
-   % \subsubsection{Battlefield V}
-
-   % \subsubsection{Battlefield 2042}
-
-    \subsection{Analys}
-    Om man kollar på värdena så finns det bara 2 fall där priset för ett spel är annorlunda.
-    Dock så har vad en € är värd ändrats genom tiden.
-    Därför så inflationsjusteras värdena så att värde på pengarna är lika med värdet då dom släpptes
-    För att inflationsjustera värden användes \textcite{Inflation}.
-    Priserna justeras efter värdena 2022 eftersom det är det senaste året någon av de undersökta spelen släpptes.
-    \begin{table}[htbp]
-        \centering
-        \setlength\tabcolsep{2pt}
-        \begin{tabular}{|c|c|c|}
-            \hline
-
-            Spel: & Original pris: & justerat pris:  \\
-            \hline
-            Call of Duty: &&\\ [-2pt]
-            Black Ops     & 59,99€ & €76.74\\
-            \hline
-            Call of Duty: &&\\ [-2pt]
-            Ghosts        & 59,99€ & 71.91€\\
-            \hline
-            Call of Duty:    &&\\ [-2pt]
-            Infinite Warfare & 59,99€ & 71.41€\\
-            \hline
-            Call of Duty®:  &&\\ [-2pt]
-            Modern Warfare® & 59,99€ & 67.90€\\
-            \hline
-            Call of Duty®:     &&\\ [-2pt]
-            Modern Warfare® II & 69,99€ & 69,99€\\
-            \hline
-            Battlefield:  &&\\ [-2pt]
-            Bad Company 2 & 29,99€ & 38.36€ \\
-            \hline
-            &&\\ [-2pt]
-            Battlefield 4 & 59,99€ & 71.91€\\
-            \hline
-            &&\\[-2pt]
-            Battlefield 1 & 59,99€ & 71.41€\\
-            \hline
-            &&\\[-2pt]
-            Battlefield V & 59,99€ & 68.90€ \\
-            \hline
-            &&\\[-2pt]
-            '
-            Battlefield 2042 & 59,99€ & 65.50€ \\
-            \hline
-        \end{tabular}
-        \caption{}
-        \label{tab:Inflation}
-    \end{table}
-
+    The methodology behind distributing video games to consumers has had a strong development during the twenty first century.
+    It has changed from buying physical discs to purchasing it digitally and then downloading the video game.
+    This study's aim is to figure out what consequences this development has for the consumer.
+    The study uses an interview and relevant articles to achieve its aim.
+    This study identifies two key indicators in this development.
+    The first is the change brought forth by making games more accessible by distributing video games online.
+    This means that the consumer has gotten greater access to a greater assortment of video games.
+    In turn it has also led to consumers buying products that they potentially do not need.
+    It has also led to an obfuscation of the true price for video games since additional content can be sold separately.
+    The second is the impact video games have had on society as a place of great innovation.
+    The development of video games has had a ripple effect in the technical development of society and smaller actors can distribute their products too.
     \newpage
-    \section{Referenser}
-    \printbibliography[heading=none]
+    \end{otherlanguage}
+    \begin{otherlanguage}{swedish}
+        \section{Inledning}
+        Jag tycker att datorspel är fantastiska.
+        Varje datorspel är en unik värld med nya spännande upplevelser, karaktärer, berättelser, historier och så mycket mer.
+        Utvecklingen har berört allt från grafik inom datorspel till möjligheter att interagera med datorspel.
+        När jag växte upp så hade jag flera möjligheter till att spela datorspel.
+        Spelen fanns på cd-skivor som laddades antingen in i datorn eller spelkonsolen.
+        Nuförtiden så är de mest digitala kopior av datorspel.
+        Att majoriteten av de spel som säljs idag har blivit mer avancerade och komplexa är uppenbart för mig som konsument.
+        Möjligheterna inom dessa spelvärldar har ökat i takt med teknikutvecklingen.
+        Även möjligheten att ta del av spelutvecklares spel har också ökat exceptionellt på 2000 talet genom att spelen erbjudits till försäljning på fler sätt än i butik.
+        \subsection{Syfte \& frågeställning}
 
-    \newpage
-    \section{Bilagor}
-    Bilaga 1
-    Google spreadsheet:
+        Syftet med undersökningen är att se på de samband som finns mellan den digitala utvecklingen av spel och hur dessa påverkar mig som konsument utifrån dessa två frågor:
 
-    https://docs.google.com/spreadsheets/d/1FuMigGO9pbtj\_DyGF0JSHJ72BOUHb\_
-    FJzymVbEDOgTY/edit?usp=sharing
+        \begin{itemize}
+
+            \item På vilka sätt har spelindustrin utvecklat nya möjligheter att distribuera och sälja digitala datorspelprodukter till konsumenter under 2000-talet?
+
+            \item Har denna utveckling inneburit en förändring för mig som konsument utifrån min roll som konsument av datorspel?
+
+        \end{itemize}
+
+        \subsubsection{Avgränsningar}
+        Detta är ett gymnasiearbete och den digitala spelvärlden är stor.
+        Detta arbete kommer inte att innefatta arkadspel, spel för telefoner eller mindre enheter.
+        Detta arbete utgår ifrån den klassiska typen av datorspel såsom Legend of Zelda, Call of duty eller liknande.
+
+
+        %skriv om påståenden till frågor
+        \section{Bakgrund} %källor
+
+        \subsection{Datorspelen som innovations katalysator}
+        Funktionerna i ett datorspel och datorns hårdvara är beroende av varandra och kräver kompatibilitet som innebär att både datorer och datorspel utvecklas hand i hand.
+        Spelen omsätter stora belopp och har blivit både så populära och därmed lönsamma att de driver på utvecklingen av hårdvaran.
+        En dator bör idag vara en bra speldator för att sälja.
+
+        På ett seminarium som hölls september 2023 i sveriges riksdag lyftes av  Björn Flintberg, forskare på RISE och ansvarig för RISE GameNode, som var inbjuden att tala, att dataspel står för 4 procent av Sveriges totala tjänsteexport och att svenska dataspelsföretag med dotterbolag i utlandet omsätter 58 miljarder per år.
+        Han beskriver även dataspelsbranschen som en innovationskatalysator för samhället.
+
+
+        \setlength{\leftskip}{1cm}
+        \("\)Dataspelsbranschen utgör också en innovationskatalysator som har potential för hela Sveriges industri och näringsliv.
+        Dataspelbranschen är inte bara i framkant kring nya teknologier, som Artificiell Intelligens och Virtual Reality, utan också en viktig mötesplats mellan kreativ innovation och teknologi, säger Björn Flintberg, forskare på RISE och ansvarig för RISE GameNode.\("\)\parencite{growth}
+
+
+        \setlength{\leftskip}{0cm}
+
+        \subsection{Datorspelandets påverkan i vardagen}
+
+        Datorspel är något vi alla berörs av idag även om vi inte upplever att vi är aktiva spelare själva.
+        Datorspel är inte längre något som kan ses som enskild underhållning utan datorspel är ett aktivt inslag i vårt vardagsliv.
+        Tekniska museet i stockholm har följt utvecklingen och skriver på sin hemsida att
+
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Dataspelens världar finns överallt; i vardagsrummen, på bussen, i tonårsrummen, i väntrum och på kontor – idag finns det knappt några gränser för när och var folk interagerar med digitala spel och med andra som spelar dessa spel.\("\)
+        \("\)Datorspel är idag Sveriges genom tiderna största kulturexport och spelen utgör även en grund för Sveriges största subkultur.\("\)\parencite{worlds}
+
+        \setlength{\leftskip}{0cm}
+
+
+        \subsection{Försäljning av fysiska datorspel}
+        Den fysiska försäljningen av datorspel har minskat till förmån för digital försäljning.
+        Detta verifieras på ett flertal trovärdiga internetsidor och av trovärdiga nyhetskällor.
+        En källa är webbplatsen Gamereactor som är en webbplats som skriver om datorspel och film.
+        Webbplatsen har funnits i Sverige sedan 2002 och skribenten Jonas Mäki är även redaktör på den digitala nyhets plattformen och har funnits med sedan starten.
+        I en mycket nyligen publicerad artikel skriver han om spelförsäljningstrenden med nya siffror från i USA.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Endast 5\% av den amerikanska spelförsäljningen var fysisk förra året.
+        Det verkar som om vi rör oss mot en helt digital framtid i mycket hög hastighet och andelen fysiskt bara minskar\ldots
+        Vid det här laget var det väldigt många år sedan digital spelförsäljning passerade fysisk sådan, vilket lett till att allt fler titlar endast säljs digitalt, till och med storspel\("\)
+
+        \setlength{\leftskip}{0cm}
+
+        Hans analys i artikeln är följande
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Detta är naturligtvis en utveckling som tydligt förklarar varför det blir allt svårare att hitta spel i fysiska butiker, och väldigt lite tyder på att denna trend kommer att förändras - snarare tvärtom.\("\)\parencite{amerikanska}
+
+        \setlength{\leftskip}{0cm}
+
+        Datorspel i denna studie
+        Att popularitet och därmed den konsumtion av digitala spel som då följer har en stor inverkan på teknikutveckling som en innovations katalysator gör detta ämne både intressant och aktuellt.
+        Användandet av ordet datorspel eller termen digitala spel syftar detta i denna studie på kommersiella spel som säljs i syfte att få många spelare.
+        Detta inkluderar även de spel som i dagligt tal kallas tv-spel.
+
+        \textcite{ComputerSweden} definition av att datorspel är spel som kräver någon form av dator.
+        Detta inkluderar fler saker än bara spel på en dator.
+        Denna definition inkluderar även spelkonsoler, arkadspel, vissa brädspel och mer.
+
+
+        \section{Metod}
+
+        För att belysa på vilket sätt spelindustrin utvecklat nya sätt att distribuera och sälja spel, gjordes en sammanställning för att se på de olika sätt spel idag distribueras vid en försäljning, till sina produktsystem, dator eller konsol.
+
+        Metoden som valdes är kvalitativ då den ansågs bäst utifrån syftet med studien.
+        Studiens område handlade om att ge en bättre förståelse för vad konsumenter tycker i dessa frågor och även varför de tycker på det sättet.
+
+        De sätt som används är informationssökning via webbsidor.
+        För att kunna genomföra denna studie har information inhämtats, via sökmotor, för artikel och information via nätet.
+
+        \subsection{Intervju}
+        En intervju har även gjorts med en spelkonsument utifrån ett intervjuformulär.
+        Telefonintervjun spelades in för att sedan transkriberats och analyseras.
+        Det relevantaste innehållet i intervjupersonens svar har sammanfattas i resultatet och kortas ner.
+        För att se hela intervjun se bilaga 1.
+        Den intervjuade personen benämns som han eller Gamern i resultatet.
+        För intervjuformuläret se bilaga 2.
+
+        Intervjun genomfördes för att i den kvalitativa metod som används i denna studie borde låta någon dela med sig av personliga åsikter och erfarenheter.
+        Val av intervjumetod har utgått från en metodguide för inkluderande intervjuer där semistrukturerad intervju ansågs som bäst för att fylla syftet med studien.
+
+        \("\)I en semistrukturerad intervju utgår du ifrån ett antal övergripande frågeområden och anpassar fördjupningsfrågorna efter hand.\("\) \parencite{Metodguide}
+
+        Urvalet för denna studie, då det är ett gymnasiearbete, begränsades till en person.
+        Det viktiga i urvalet var att intervjua någon person i ålder så att den personen varit med om senaste årens utveckling av konsumtion av datorspel.
+        Att intervjupersonen identifierar sig själv som gamer och att personen representerade en uppskattningsvis genomsnittlig spelare.
+        Eftersom män enligt Folkhälsomyndigheten är mer frekventa spelare valdes en passande man i medelåldern.
+        Mannen som valdes var 51 år gammal, och intervjuformen var en telefonintervju.
+
+        Anledningen till att en man valdes och även i den åldern, är att det i sammanhanget ansågs mest representativt utifrån hur Folkhälsoinstitutet beskriver vilka som spelar datorspel.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Nästan hälften av alla män (49 procent) och en dryg tredjedel av alla kvinnor (37 procent) i åldern 16–84 år har spelat datorspel under de senaste 12 månaderna, enligt Swelogs 2021.
+        Cirka 13 procent har spelat datorspel dagligen, och män gör det i något högre utsträckning än kvinnor (15 procent jämfört med 10 procent).\("\)\parencite{folkhalsa}
+
+        \setlength{\leftskip}{0cm}
+
+        \subsection{Andra perspektiv}
+
+        De fördelar datorspelsutvecklaren Microsoft beskriver med denna typ av nyare digital distribution, för dig som konsument presenteras i sin helhet, för att i resultatet kunna se kopplingar med intervjupersonens upplevelse av digital distribution.
+
+
+
+        De nackdelar denna studie uppmärksammar finns under rubriken \("\)Identifierbara digitala faror för mig som konsument\("\)  för att i resultatet kunna se kopplingar med intervjupersonens upplevelse av digital distribution.
+
+        \section{Resultat}
+
+       \subsection{Distribuering via CD rom} 
+        Fysisk skiva som säljs i butik som innehåller ett datorspel.
+        Denna skiva kräver en kompatibel dator med CD-läsare (skivspelare)  eller en kompatibel spelkonsol.
+        En svensk definitionen av en CD rom är följande:
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)\("\)Compact disc - read-only memory\("\).
+        System för permanent optisk lagring av data på kompaktskivor.
+        Skivspelaren ansluts till dator, och skivornas innehåll kan inte ändras eller skrivas över.\("\) \parencite{CD}
+
+        \setlength{\leftskip}{0cm}
+
+        Fysiska dataspelsskivor kan köpas till spelkonsoler som Playstation, Nintendo och Xbox och även vissa spel till PC (persondator)
+        Detta sätt att köpa ett spel innebär en engångskostnad för ditt spel.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Vid mitten av 1990-talet slog CD-ROM igenom som lagringsmedium, vilket innebar att spelen kunde bli ordentligt mycket mer avancerade och utrymmeskrävande med bland annat fotorealism och filmsekvenser\("\) \parencite{nyckel}
+
+        \setlength{\leftskip}{0cm}
+
+        \subsection{Distribuering via CD-nyckel}
+        Cd nyckel är en kod som låser upp ett spel för nedladdning på din dator eller spelkonsol.
+
+        \setlength{\leftskip}{1cm}
+        \("\)På Playgames.se säljer vi CD-nycklar som ska aktiveras och laddas ner via exempelvis Steam.
+        Du får ingen fysisk produkt med posten.
+        Du få en CD-nyckel via e-post och sedan du är redo att spela direkt.
+        Håll koll på vårt sortiment eftersom det ständigt kommer nya spel för Mac på Playgames.se.
+        Vi säljer spel för Mac via direkt nedladdning.
+        Dvs inga fysiska produkter, bara en CD-nyckel som du aktiverar ditt nya Mac spel med och sedan är du redo att spela\("\)\parencite{playgames}
+
+        \setlength{\leftskip}{0cm}
+        Detta sätt att köpa ett spel innebär en engångskostnad för ditt spel.
+        
+        \subsection{Nedladdningsbart innehåll}
+        Nedladdningsbart innehåll eller downloadable content (DLC) är innehåll till ett datorspel som utvecklaren och utgivaren av någon anledning vill hålla separat.
+        Det kan vara en uppdatering som ändrar någonting, resurser som används i spelet, kosmetiska ändringar, nya banor eller vapen.
+        En DLC kan vara vad som helst.
+        Det finns ingen gräns för hur mycket DLC ett datorspel kan ha och det finns inte heller någon gräns för hur mycket det kan kosta.
+        Generellt sett så är priset för DLC lägre än vad själva spelet.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Nedladdningsbart material kan vara allt från estetiska skillnader till en helt ny berättelse jämförbart med ett expansionspack.
+        Ett DLC kan lägga till ett nytt spelsätt, objekt, nivåer, utmaningar, karaktärer eller andra verktyg till ett redan existerande spel.\("\) \parencite{nedladdningsbart}
+
+        \setlength{\leftskip}{0cm}
+
+        \subsection{Battle pass}
+
+        Battle pass är ett system där du köper rätten till att få något innehåll i ett datorspel upplåst, så att du får tillgång till att använda detta i spelet.
+        Medan du spelar spelet så låser du upp nya nivåer i battle passet men för att få tillgång till innehållet i den nivån måste du köpa och betala.
+        En nivå är som en låda med något innehåll som hör till ett spel.
+        Innan en person köper ett battle pass så går det oftast att se hur många nivåer det har och vad som finns i lådorna.
+        Generellt sett så är battle pass och dess innehåll endast tillgängligt under en specifik tid.
+        Oftast så kan går det också betala för att låsa upp nästa nivå efter köpet av battle passet.
+
+        Att spel säljs med battle pass har blivit vanligare och vad du kommer att behöva betala för en bra spelupplevelse är inte lätt som konsument att veta på förhand.
+        Disney med speltillverkaren Gameloft har nu i april månad fått stor kritik över att deras senaste spel Disney speedstorm som går spela på flertalet plattformar har battle pass som du måste köpa för pengar, om du vill vidare i spelet.
+        Detta enligt en artikel av \textcite{FZ} skribent på webbplatsen FZ.
+
+        \subsection{Premium valutor}
+        En premium valuta inom ett spel är en valuta som spelaren oftast inte kan få genom att spela spelet utan vanligtvis köper för vanliga pengar.
+        Kan premiumvaluta fås i spelet så är det oftast i små mängder.
+        Det kan ses som en morot för ytterligare större köp och kritik finns mot systemet med premium valutor.
+        Om det finns flera olika premium valutor så går det oftast att omvandla dem till andra valutor beroende på.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Premium valuta är konceptet att få monetära förmåner när växelkursen mellan två valutor är till en fördel i en valuta.
+        Inom spelvärlden sker detta utbyte mellan olika valutor inom ett visst spel eller mellan två olika spel\("\)\parencite{bananatic}
+
+        \setlength{\leftskip}{0cm}
+
+        \subsection{Loot-lådor}
+
+        Loot-lådor är en form av ekonomisk transaktion där du köper en låda som ger dig någonting i ett spel.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)loot-lådor i data och TV-spel har blivit uppmärksammade den senaste tiden på grund av deras likhet med spel om pengar.En loot-låda kan innehålla någon form av virtuellt föremål som tas fram genom slumpen, till exempel en fotbollsspelare i ett fotbollsspel eller ett nytt sällsynt utseende till en spelkaraktär.\("\)\parencite{sverigesradio}
+
+        \setlength{\leftskip}{0cm}
+
+        Att köpa en lootlåda innebär att du köper någonting fast du vet inte vad det är.
+        I en loot låda så finns det oftast väldigt många olika saker med olika chans att få dem.
+        Sakerna som en spelare vill ha har oftast väldigt låg chans.
+        Låt oss säga att du vill ha en specifik legendarisk sak.
+        Det finns en 1\% chans att få en legendarisk sak och det finns 5 olika.
+        Alltså en \(1/500\) eller 0,2\% chas att få det du vill.
+        Detta system liknar spelmaskiner som finns på casinon med den största skillnaden att du får pengar på casinon och att du får saker inuti spelet från loot-lådorna.
+
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Lootlådor är en sorts hemlig låda i tv-spel som går att köpa för riktiga pengar.
+        I den får spelaren slumpmässiga föremål och figurer som går att använda i spelvärlden, inte helt olikt gamla tiders hockeykort.
+        Sveriges konsumenter är kritiska, och liknar det vid lotterier.
+        - Det är en väldigt aggressiv marknadsföring som ofta gränsar till att vara direkt vilseledande.
+        Man använder sig av påhittade valutor som exempelvis diamanter och poäng i stället för att redovisa vad det faktiskt kostar, säger Sinan Akdag, digital expert på Sveriges konsumenter.\("\)\parencite{loot}
+
+        \setlength{\leftskip}{0cm}
+
+
+
+       \subsection{Vad kan detta nya sätt att konsumera digitala produkter innebära för mig som konsument?}
+        Att äga sitt fysiska spel innebär att du med en kompatibel enhet alltid kan spela ditt spel.
+        Det vill säga så länge din digitala skiva håller eller din digitala enhet.
+        \textcite{support} som är ägare av företaget Xbox listar följande fördelar för dig som konsument med att konsumera digitala spelprodukter.
+        \begin{itemize}
+            \item \("\)Med digitala spel är det enkelt att gå från ett spel till ett annat utan att behöva byta skiva – eller hitta skivan om du har glömt var du har den.\("\)
+            \item \("\)Dina spel måste laddas ned till din enhet oberoende av om de är fysiska eller digitala, och de tar upp lika mycket utrymme. Men digitala spel ger dig mycket mer flexibilitet, som fjärrinstallation och förinläsning innan spelen startar.\("\)
+            \item \("\)Digitala spel kan delas med alla som loggar in på din hemma-Xbox. Det inkluderar spel som erbjuds via en Xbox Game Pass-prenumeration. Och du kan spela digitala spel som du äger var du än är inloggad. Ingen skiva krävs.\("\)
+            \item \("\)Genom att ge spel i present direkt från Microsoft Store till vänner och familj får du ett jättebra (och superenkelt) sätt att visa hur generös du är.\("\)
+        \end{itemize}
+
+        
+        \subsection{Identifierbara digitala faror för mig som konsument}
+
+        Det finns många kritiska röster mot spelbolagens sätt att tjäna pengar genom sina nya distributionssätt av spel eller innehåll till spel.
+        Flera studier har gjorts och flera europeiska länder har tillsammans krävt förbättringar kring konsumentskydd inom detta område.
+        Det finns tydliga indikationer på casino liknande försäljningsmetoder, som återfinns i spelen, kan leda till ekonomiskt spelmissbruk.
+        Det finns en norsk studie \("\)Insert Coin\("\) från 2022 som blivit uppmärksammad stort som handlar om de casino liknande sätt spelindustrin utnyttjar konsumenter.
+        Detta har lett till regeringskrav att se över regleringen runt spelindustrins försäljningsmetoder.
+
+        \setlength{\leftskip}{1cm}
+
+        \("\)Tillsammans med 19 andra europeiska konsumentorganisationer kräver Sveriges Konsumenter förbättringar av konsumentskyddet för europeiska gamers, särskilt för barn.
+        Bakgrunden är en ny rapport där den norska konsumentorganisationen Forbrukerrådet har granskat spelindustrins oschyssta affärsmetoder.
+        \begin{itemize}
+            \item Påhittade valutor som döljer vad köpen i spelen verkligen kostar.
+            \item Svårtydda och ibland vilseledande beskrivningar av sannolikheten att vinna.
+            \item Speldesign som medvetet utnyttjar psykologiska sårbarheter och manipulerar spelare att spendera mer pengar.
+            \item Aggressiva marknadsföringsmetoder, i vissa fall riktade mot barn\("\)\parencite{insertcoin}
+        \end{itemize}
+        \setlength{\leftskip}{0cm}
+        
+        \subsection{Intervju med en gamer}
+        På frågan om Gamern varit  konsument av datorspel under perioden då spelförsäljningen har övergått till mer och mer digitala sätt att leverera spel så svarar han:
+
+        \setlength{\leftskip}{1cm}
+
+        Ja, jag har ju varit en spelkonsument sedan 80-talet så absolut.
+
+
+        \setlength{\leftskip}{0cm}
+        Om då det digitala sättet att leverera datorspel påverkat hur du konsumerar så svarar studiens Gamer
+
+        \setlength{\leftskip}{1cm}
+
+        Ja, det har det ju absolut gjort
+
+        \setlength{\leftskip}{0cm}
+        På frågan om hur digitala sättet att leverera datorspel har påverkat honom så svarar han:
+
+        \setlength{\leftskip}{1cm}
+        Nu med det digitala så blir det mycket mer impulsköp av spel. Ooo Det här ser ju spännande ut.
+
+
+        \setlength{\leftskip}{0cm}
+        Han beskriver även hur reklam på nätet påverkar inköpen idag
+
+        \setlength{\leftskip}{1cm}
+        Man ser liksom att det är en reklam på det. Eller någon som man klickar runt på  Youtube eller Twitch. Det här såg ju spännande ut, det här kanske jag ska prova. Och så spontan köpande.
+        Så absolut, det är inte lika planerat spel shoppande nu för tiden utan det är mycket mer impulsstyrd. Det är mycket mer tillgängligt.
+
+
+
+        \setlength{\leftskip}{0cm}
+        På frågan om vad han tycker om utveckling att inte äga en fysisk kopia av ett spel så svarar Gamern
+
+        \setlength{\leftskip}{1cm}
+        Ja, det där är ju en otroligt intressant fråga.
+        Framförallt med tanke på att fler och fler plattformar säljer de inte ens äganderätten till spelet.
+        De säljer ju i princip en rättighet att spela spelet men du äger ju ingenting.
+
+
+
+        \setlength{\leftskip}{0cm}
+        Han beskriver också hur spelet kan försvinna om den servern, eller det spelet läggs ned.
+
+        \setlength{\leftskip}{1cm}
+        Förr så kunde du ju ändå köpa ett spel, du kunde spela det och sen kunde du ju faktiskt sälja det vidare. Då hade du ju en fysisk kopia. Personligen så har jag aldrig sålt ett spel vidare på det sättet så jag tycker att det inte är ett problem överhuvudtaget. Men jag förstår att det är många som tycker det. Att man inte äger den vara man har köpt på något sätt.
+
+
+        \setlength{\leftskip}{0cm}
+        Då denna studie berör sätt att konsumera dataspel idag så frågas Gamern om sin egen kännedom kring dessa nya leveranssätt. Det visar sig att Gamern har bra insikt om vad alla leveranssätt är och att de innebär lite olika saker, främst för sättet att konsumera. Utifrån svaren framgår även att Gamern använt dessa sätt för att konsumera spelprodukter.
+
+        Nedladdningsbart innehåll.
+
+        \setlength{\leftskip}{1cm}
+        Det är ju extra material om man säger så. Tilläggsmaterial som släpps till spel. För att du släpper ett spel som innehåller. Om du jämför med en bok så släpper du en bok som innehåller tio kapitel. Men sen kan du köpa till kapitel 11, 12 och 13 om du är nyfiken. Men det är ju liksom så att det är extra material som du kan betala för då. Framförallt. Och ladda ner. Alltså tilläggs innehåll i spelet.
+
+
+
+        \setlength{\leftskip}{0cm}
+        Battle Pass
+
+
+        \setlength{\leftskip}{1cm}
+        Det får vi ändå kalla för en prenumeration. På något sätt.
+        På en online tjänst egentligen
+
+
+
+        \setlength{\leftskip}{0cm}
+        Premium valutor.
+
+        \setlength{\leftskip}{1cm}
+        Alltså pengar i spel. Du kan ju ha interna shoppar. Och de interna valutorna går ju givetvis att betala riktiga pengar för att få tag i.
+        På nytt sätt med hjälp av mikrotransaktioner. Alltså att man kan köpa saker, bättre vapen, bättre rustningar. Snyggare framförallt kanske. Snyggare vapen, snyggare rustningar, coolare grejer.
+        Det är liksom spelets egna pengar om man säger så. Men det kostar ju generellt vanliga pengar att få tag i de där interna pengarna.
+
+
+
+        \setlength{\leftskip}{0cm}
+        Loot lådor.
+
+
+        \setlength{\leftskip}{1cm}
+        Loot lådor, precis. Nu spelar jag faktiskt ganska lite spel som innehåller loot lådor som tur var. Men loot lådor är ju helt enkelt byte.
+        Saker som bättre vapen och bättre rustningar och bättre, snyggare, coolare grejer. Men loot lådor är väl helt enkelt lådor som du köper specifikt då för riktiga pengar.
+        Även om du kan köpa dem för låtsaspengar som du har köpt för riktiga pengar. Men som helt enkelt innehåller slumpartat innehåll.  Jag vet att det finns vissa speltillverkare och vissa spel som fått rätt mycket kritik. För att de inte ens har öppet hur stor chans det är att få de här unika föremålen och hur stor sannolikhet du har på det. Men ja, du köper en skattlåda som kan innehålla slumpmässigt innehåll helt enkelt.
+
+
+
+        \setlength{\leftskip}{0cm}
+        Kan du säga positiva konsekvenser för dig som konsument att spel levereras digitalt?
+
+
+        \setlength{\leftskip}{1cm}
+        Ja, men absolut. Det är ju extremt tillgängligt.  Man kan ju prova på väldigt, väldigt mycket. Det är ju lätt. Väldigt många spel kommer ju med speldemos som man kan prova på i förväg.  Och det andra som jag personligen tycker är extremt positivt är  ju att de här mindre spelföretagen som speltillverkarna. Får ju ut sin produkt. Jag menar indie spel. Typ exempel på så att det är små, små, små, små spelföretag. Som har en kanske helt genial spelidé. Som kanske har ett litet spel. Och sen så är det inte superdyrt
+
+
+
+        \setlength{\leftskip}{0cm}
+        Gamern jämför tillgängligheten på spel idag med Spotify, att du nu kan hitta mycket mer innehåll och att inte bara stora tillverkare kan distribuera sin produkt
+
+        \setlength{\leftskip}{1cm}
+        Det kanske inte är en speciellt grafikbaserad. Det kanske inte är så. Utan det är en sjukt bra spelidé. Och man kommer ju åt det. För de fanns ju inte förut. Vilket är ju fantastiskt. Och den typen av spel tilltalar ju mycket mer. Rent generellt. Så det är ju väldigt positivt.
+
+
+        \setlength{\leftskip}{0cm}
+        Kan du se negativa konsekvenser för dig som konsument. Att spelen levereras digitalt?
+
+        \setlength{\leftskip}{1cm}
+        Personligen egentligen inte. Jag har inga problem med att inte äga grejerna fysiskt. Jag ser ingen personlig vinning i att kunna sälja vidare och så vidare.
+        Det som möjligen för mig är negativt är om man spontant shoppar lite för mycket spel. Som man nästan inte spelar i slutändan. För man bara, det här såg ju lite kul ut. Och så har man råkat köpa lite alltihop. För att det går så fort. Det är ju så mycket impulsshopping. Jag är en ganska effektiv impulsshoppare. Så det är väl inte helt positivt för mig. Då är det bättre om jag var tvungen att tänka en stund ibland.
+
+
+
+        \setlength{\leftskip}{0cm}
+
+
+
+        \section{Diskussion}
+
+        Studien visar på att utvecklingen av sätt att distribuera spel förändrats markant under 2000 talet.
+        Att spelindustrin hittat flera olika vägar eller sätt att distribuera spelproduketer och att det gått från ett fysiskt fast köp av en spelprodukt till att du digitalt köper delar, prenumerationer, uppdateringar och kosmetiskt innehåll.
+
+        Detta innebär för konsumenten att det är svårt att veta på förhand vad du kommer att spendera på ett spel.
+        Detta har fått konsumentorganisationer runt om i Europa att reagera och kräva förbättringar av konsumentskyddet.
+
+        Att som enskild konsument råka köpa fler spelprodukter än vad du planerat och tänkt från början bekräftas i intervjun med gamern.
+        Han beskriver sin impulsshopping av spel som det enda problemet han ser med den digitala utvecklingen.
+        Det hade varit bra att behöva tänka efter lite längre.
+        Gamern beskriver upplevelsen av att inspireras genom reklam, tänka att det här såg ju lite kul ut och så fort “råkat köpa lite alltihop” vilket såklart kan få negativa ekonomiska konsekvenser för konsumenten.
+
+        Microsoft, utifrån deras position som utvecklare av datorspel, plattformar där det går att spela datorspel och utgivare av datorspel uttrycker att det endast varit en positiv utveckling för konsumenter.
+        Det är lättare att hålla reda på sina spel och få tag på nya spel.
+        Det finns inget problem med att behöva ladda ner ett spel eftersom slutanvändaren ändå behöver ladda ner uppdateringar för fysiska skivor.
+
+        Gamern delar bilden med Microsoft och upplever att utvecklingen är i det mesta positiv.
+        Datorspel har blivit extremt mer tillgängliga att få tag i.
+        Urvalet av spel som finns att köpa har ökat.
+        Han tycker egentligen inte att något är negativt i utvecklingen.
+        På grund av att han inte måste fara till en affär för att köpa ett spel utan kan göra det hemma så har det blivit mer impulsköp.
+        Gamern kan förstå att andra kanske är oroliga för att de inte längre äger ett spel och att det inte längre finns möjlighet att sälja spelet vidare.
+
+        Det som gamern lyfter är möjligheten för mindre speltillverkare att komma ut med sin produkt.
+        Eftersom urvalet av spel inte begränsas av vad som generellt kan säljas på en hylla i affären utan vad som säljer tillräckligt bra för att få tillbaka produktionskostnaderna från enskilda konsumenter i olika länder. Nu kan vem som helst med kunskap om att utveckla ett datorspel, med en bra idé, skapa ett dataspel och göra det tillgängligt för världens konsumenter .
+
+        Dataspel är en stark tillväxtbransch, omsätter miljardbelopp och att detta är en innovations katalysator i samhället kan ses som en mycket intressant faktor.
+        Samtidigt med spelbolagens ökade möjligheter till inkomster har detta genererat något som definitivt har potential för hela Sveriges industri och näringsliv.
+        Innovativ teknik som är här för att stanna och för att hela tiden vidareutvecklas.
+
+        Konsumentskyddet bör stärkas så att den enskilde inte luras till köp utan att konsumenten tydligt vet vad den köper och vad det kostar.
+        Att detta är en bransch i ständig utveckling gör detta mycket intressant att fortsätta följa.
+        En gamer idag är inte någon som sitter i sin ensamhet och spelar nördiga spel - en gamer är idag en del av den nya innovationen!
+
+
+        \setlength{\leftskip}{0cm}
+
+        \newpage
+        \section{Referenser}
+        \printbibliography[heading=none]
+
+        \newpage
+        \section{Bilagor}
+
+        Bilaga 1
+        Intervju
+        Google docks:
+
+        https://docs.google.com/document/d/1nByN3oeQF\_
+        L7ovyQnnqxedOGHqvrdjynMLl-lG4JHtc/edit?usp=sharing
+
+        Bilaga 2
+        Intervju frågor
+        Google docks:
+
+        https://docs.google.com/document/d
+
+        /1VFkDuqnWIKvRW52dyg0PwqD9qjtuxgVtOAzLFjBYSAI/edit?usp=sharing
 
 
     \end{otherlanguage}
